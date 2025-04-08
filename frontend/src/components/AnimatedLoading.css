@@ -1,0 +1,113 @@
+.animated-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.animated-loading.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+}
+
+.animated-loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loading-text {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-700, #374151);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Custom loading dots */
+.loading-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loading-dots .dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--dot-color, #6366f1);
+  animation: dotPulse 1.4s infinite ease-in-out;
+}
+
+.loading-dots .dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loading-dots .dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+/* Linear loading bar */
+.loading-linear {
+  height: 4px;
+  background-color: rgba(99, 102, 241, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-linear .bar {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  background-color: var(--bar-color, #6366f1);
+  border-radius: 2px;
+  animation: linearProgress 1.5s infinite ease-in-out;
+}
+
+/* Animations for loading indicators */
+@keyframes dotPulse {
+  0%, 80%, 100% { 
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  40% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes linearProgress {
+  0% {
+    left: -30%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -30%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .loading-text {
+    font-size: 0.75rem;
+  }
+} 

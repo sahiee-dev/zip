@@ -1,0 +1,198 @@
+.add-account-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-account-title {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.existing-accounts {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--secondary-background);
+  border-radius: 8px;
+}
+
+.existing-accounts h3 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.accounts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--background-color);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.account-email {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.default-badge {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.add-new-account-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-new-account-button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-light);
+}
+
+.form-helper-text {
+  margin-top: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.gmail-instructions {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: var(--secondary-background);
+  border-radius: 4px;
+}
+
+.gmail-instructions-title {
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.gmail-instructions-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.gmail-instructions-list li {
+  margin-bottom: 0.5rem;
+}
+
+.gmail-instructions-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.gmail-instructions-list a:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.submit-button,
+.cancel-button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.submit-button:disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  background-color: var(--secondary-background);
+  color: var(--text-color);
+}
+
+.cancel-button:hover {
+  background-color: var(--border-color);
+}
+
+.error-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--error-background);
+  color: var(--error-text);
+  border-radius: 4px;
+  border: 1px solid var(--error-border);
+}
+
+.success-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--success-background);
+  color: var(--success-text);
+  border-radius: 4px;
+  border: 1px solid var(--success-border);
+} 
